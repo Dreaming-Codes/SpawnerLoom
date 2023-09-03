@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "spawnerloom",
+  "version": "${version}",
+  "name": "SpawnerLoom",
+  "description": "SpawnerLoom is a custom spawner fabric mod",
+  "authors": [
+    "DreamingCodes"
+  ],
+  "contact": {
+    "website": "https://dreaming.codes",
+    "repo": "https://github.com/dreamingcodes/SpawnerLoom"
+  },
+  "license": "MIT",
+  "icon": "assets/spawnerloom/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "codes.dreaming.spawnerloom.client.SpawnerLoomClient"
+    ],
+    "main": [
+      "codes.dreaming.spawnerloom.SpawnerLoom"
+    ]
+  },
+  "mixins": [
+    "spawnerloom.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "owo": ">=${owo_version}"
+  }
+}
